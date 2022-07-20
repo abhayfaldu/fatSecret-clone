@@ -8,19 +8,19 @@
         #container{
             display: flex;
             border: 1px solid red;
-            width: 60%;
+            width: 70%;
             height: 100%;
             margin: auto;
         }
         #container>div{
-            border: 1px solid blue;           
+            /* border: 1px solid blue;            */
         }
         #container>div:first-child{
-            width: 66%;
+            width: 72%;
             height: 100%;
         }
         #container>div:last-child{
-            width: 33%;
+            width: 28%;
             height: 20%;
         }
         #left>div:first-child{
@@ -43,6 +43,7 @@
         #lefthead>div:last-child{
             line-height: 18px;
             margin-left: 2px ;
+            margin-top: 20px;
         }
         #lefthead>div:last-child>h1{
             color: #5E5E53;
@@ -52,8 +53,8 @@
         }
         #lefthead>div:last-child>h3{
             color: #333333;
-            font-size: 13px;
-            /* font-family: Helvetica,Arial; */
+            font-size: 14px;
+            font-family: Helvetica,Arial;
         }
         #right{
             padding-left: 15px;
@@ -67,6 +68,15 @@
         }
         #right>button{
             color: blue;
+        }
+        #right>input{
+            font-size: 11px;
+            
+        }
+        #name{
+            height: 22px;
+            width: 250px;
+            margin-bottom:10px ;
         }
     </style>
 </head>
@@ -87,6 +97,11 @@
             <h1>Food Search</h1>
             <input type="text" name="" placeholder="Enter Search" id="name">
             <button>Search</button>
+            <br>
+            <input type="radio" name="ctl12__ctrl_0type" value="1" checked="checked">Recipes
+            <br>
+            <input type="radio" name="ctl12__ctrl_0type"  value="2">Food
+            
         </div>
     </div>
 </body>
