@@ -7,13 +7,13 @@
     <style>
         #container{
             display: flex;
-            border: 1px solid red;
+            /* border: 1px solid red; */
             width: 70%;
             height: 100%;
             margin: auto;
         }
         #container>div{
-            border: 1px solid blue;           
+            /* border: 1px solid blue;            */
         }
         #container>div:first-child{
             width: 72%;
@@ -33,16 +33,15 @@
             margin-bottom: 8px;
         }
         #lefthead>div:first-child{
-            width: 25%;
+            width: 23%;
         }
          #lefthead>div>img{
-            width: 100%;
+            width:120px;
             height: 100%;
             background-color: antiquewhite;
         }
         #lefthead>div:last-child{
-            line-height: 18px;
-            margin-left: 2px ;
+            line-height: 13px;
             margin-top: 20px;
         }
         #lefthead>div:last-child>h1{
@@ -53,8 +52,9 @@
         }
         #lefthead>div:last-child>h3{
             color: #333333;
-            font-size: 14px;
+            font-size: 13px;
             font-family: Helvetica,Arial;
+            margin-top: 0px;
         }
         #right{
             padding-left: 15px;
@@ -83,6 +83,32 @@
         }
         .con2{
             display: flex;
+            border: 1px solid grey;
+            height: 60px;
+            width: 100%;
+            margin-bottom: 3px;
+        }
+        .con2>div{
+            /* border: 1px solid blue; */
+        }
+        .con2>div:first-child>img{
+   
+            height: 100%;
+            width: 60px;
+        }
+        .con2>div:last-child{
+            line-height: 18px;
+            margin-left: 3px;
+            
+        }
+        .con2>div:last-child>h3{
+            margin-top: 0%;
+        }
+        .recipelisthead{
+            color: #028CC4;
+            font-weight: bold;
+            font-size: 18px;
+            font-family: Helvetica,Arial;
         }
     </style>
 </head>
@@ -130,6 +156,7 @@
     let res=await fetch(url);
     let data= await res.json();
     return data.results;
+    console.log(data.results);
     
   }
   let append = (data) => {
@@ -142,8 +169,8 @@
 
         let h3=document.createElement("h3");
         h3.innerText=el.title;
-        let h2=document.createElement("h2");
-        h2.innerText=el.nutrition.nutrients.name;
+        h3.setAttribute('class','recipelisthead');
+        
 
         let div1=document.createElement("div");
 
@@ -156,7 +183,7 @@
 
         div1.setAttribute('class','video');
         div1.append(img);
-        div2.append(h3,h2);
+        div2.append(h3);
         container2.append(div1,div2);
         container.append(container2);
     });
