@@ -85,9 +85,9 @@
             width: 100%;
             margin-bottom: 3px;
         }
-        .con2>div{
+        /* .con2>div{
             /* border: 1px solid blue; */
-        }
+        /* } */ */
         .con2>div:first-child>img{
    
             height: 100%;
@@ -121,6 +121,7 @@
                 </div>
             </div>
             <div id="leftbody">
+                <div id="catagories"></div>
                 <div id="container1">
                     <div></div>
                 </div>
@@ -140,6 +141,54 @@
 </body>
 </html>
 <script>
+    let url = "https://www.themealdb.com/api/json/v1/1/Categories.php";
+
+let showData= async ()=>{
+  try {
+    let res =await fetch(url);
+    let data = await res.json();
+    append1(data.categories)
+    console.log(data.categories);
+
+
+  } catch (error) {
+    console.log(error);
+  }
+}
+showData();
+
+let append1 = (data) =>{
+  let categories = document.getElementById("categories");
+  catagories.innerHTML= null;
+
+    data.forEach((el) => {
+        let img= document.createElement("img");
+        img.src=el.image;
+
+        let h3=document.createElement("h3");
+        h3.innerText=el.title;
+        h3.setAttribute('class','recipelisthead');
+        
+
+        let div1=document.createElement("div");
+
+        let div2=document.createElement("div");
+        let container2=document.createElement("div");
+        container2.setAttribute('class','con2');
+        div1.onclick= () => {
+            savevideo(el);
+        }
+
+        div1.setAttribute('class','video');
+        div1.append(img);
+        div2.append(h3);
+        container2.append(div1,div2);
+        catagories.append(container2);
+    });
+}
+
+
+
     const api_key = "c0f85645629349f2abe99f2bf0ebd0c5";
   let search = async() =>{
     let query=document.getElementById("query").value;
