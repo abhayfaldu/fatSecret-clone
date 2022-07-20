@@ -52,8 +52,21 @@
         }
         #lefthead>div:last-child>h3{
             color: #333333;
-            font-size: 14px;
+            font-size: 13px;
             /* font-family: Helvetica,Arial; */
+        }
+        #right{
+            padding-left: 15px;
+            padding-top: 20px;
+            background-color: #EDF1E9;
+        }
+        #right>h1{
+            font-size: 15px;
+            font-family: "Trebuchet MS";
+            font-style: italic;
+        }
+        #right>button{
+            color: blue;
         }
     </style>
 </head>
@@ -70,7 +83,11 @@
             </div>
             <div id="leftbody"></div>
         </div>
-        <div id="right"></div>
+        <div id="right">
+            <h1>Food Search</h1>
+            <input type="text" name="" placeholder="Enter Search" id="name">
+            <button>Search</button>
+        </div>
     </div>
 </body>
 </html>
