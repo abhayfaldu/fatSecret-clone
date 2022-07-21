@@ -1,0 +1,38 @@
+:root {
+  --bgg: #33b34b;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica, Arial, sans-serif;
+  box-sizing: border-box;
+  /* background-color: rgba(0, 50, 0, 0.3); */
+}
+.container {
+  width: 986px; 
+  margin: auto;
+}
+#register {
+  background-color: var(--bgg);
+  height: 28px;
+}
+#register .container {
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 14px;
+  color: white;
+}
+/* #register .container div {
+} */
+#logoAndSearch {
+  padding: 18px 0 10px;
+}
+#logoAndSearch img + div {
+  display: flex;
+  /* justify-content: flex-end; */
+  margin-left: 170px;
+  font-weight: bold;
+  /* fz */
+}
