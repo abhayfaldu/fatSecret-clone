@@ -80,26 +80,26 @@
         }
         .con2{
             display: flex;
-            border: 1px solid grey;
+            /* border: 1px solid grey; */
             height: 60px;
             width: 100%;
             margin-bottom: 3px;
         }
         /* .con2>div{
             /* border: 1px solid blue; */
-        /* } */ */
+        /* }  */
         .con2>div:first-child>img{
    
             height: 100%;
             width: 60px;
         }
-        .con2>div:last-child{
+        .con2>div:nth-child(2){
             line-height: 18px;
             margin-left: 3px;
             
         }
-        .con2>div:last-child>h3{
-            margin-top: 0%;
+        .con2>div:nth-child(2)>h3{
+            margin-top: 3px;
         }
         .recipelisthead{
             color: #028CC4;
@@ -107,6 +107,51 @@
             font-size: 18px;
             font-family: Helvetica,Arial;
         }
+        #catagories{
+            display: block;
+        }
+        #catagories>.con3>div:first-child>img{
+            height: 100%;
+            width: 60px;
+        }
+        .con3{
+            display: flex;
+             border: 1px solid grey; 
+            height: 60px;
+            width: 100%;
+            margin-bottom: 3px;
+        }
+        .con3>div:first-child>img{
+   
+        height: 100%;
+         width: 60px;
+        }
+        .con3>div:last-child{
+        line-height: 18px;
+        margin-left: 3px;
+   
+        }
+        .con3>div:last-child>h3{
+        margin-top: 3px;
+        }
+        h4{
+        font-size: 14px;
+        line-height: 15px;
+        color: rgba(139, 133, 133, 0.733);
+        margin-right: 0px;
+        }
+        img{
+            height: 100%;
+         width: 60px;  
+        }
+        .con2>div{
+            border: 1px solid red;
+        }
+        .con2>div:last-child{
+        
+        color: rgba(139, 133, 133, 0.733);
+        }
+        
     </style>
 </head>
 <body>
@@ -156,32 +201,34 @@ let showData= async ()=>{
   }
 }
 showData();
-
+let x = Math.floor((Math.random() * 100));
 let append1 = (data) =>{
   let categories = document.getElementById("categories");
   catagories.innerHTML= null;
 
     data.forEach((el) => {
         let img= document.createElement("img");
-        img.src=el.image;
+        img.src=el.strCategoryThumb;
 
         let h3=document.createElement("h3");
-        h3.innerText=el.title;
+        h3.innerText=el.strCategory;
         h3.setAttribute('class','recipelisthead');
         
+        let h4=document.createElement("h4");
+        h4.innerText=el.amount;
 
         let div1=document.createElement("div");
 
         let div2=document.createElement("div");
         let container2=document.createElement("div");
-        container2.setAttribute('class','con2');
+        container2.setAttribute('class','con3');
         div1.onclick= () => {
             savevideo(el);
         }
 
         div1.setAttribute('class','video');
         div1.append(img);
-        div2.append(h3);
+        div2.append(h3,h4);
         container2.append(div1,div2);
         catagories.append(container2);
     });
@@ -190,10 +237,13 @@ let append1 = (data) =>{
 
 
     const api_key = "c0f85645629349f2abe99f2bf0ebd0c5";
-  let search = async() =>{
+    let search = async() =>{
+    let categories = document.getElementById("categories");
+    catagories.innerHTML= null;
     let query=document.getElementById("query").value;
-  let data= await getdata(query);
+    let data= await getdata(query);
     append(data);
+    console.log(data);
   }
   
   let getdata= async (query) => {
@@ -206,7 +256,7 @@ let append1 = (data) =>{
     
   }
   let append = (data) => {
-    let container=document.getElementById("container1");
+    let container=document.getElementById("catagories");
     container.innerHTML= null;
 
     data.forEach((el) => {
@@ -216,12 +266,17 @@ let append1 = (data) =>{
         let h3=document.createElement("h3");
         h3.innerText=el.title;
         h3.setAttribute('class','recipelisthead');
-        
 
         let div1=document.createElement("div");
-
         let div2=document.createElement("div");
         let container2=document.createElement("div");
+        let div3=document.createElement("div");
+
+        el.nutrition.nutrients.forEach((el)=>{
+            let amount=document.createElement("p");
+            amount.innerText="Fat:"+el.amount;
+            div3.append(amount);
+        })
         container2.setAttribute('class','con2');
         div1.onclick= () => {
             savevideo(el);
@@ -230,8 +285,9 @@ let append1 = (data) =>{
         div1.setAttribute('class','video');
         div1.append(img);
         div2.append(h3);
-        container2.append(div1,div2);
+        container2.append(div1,div2,div3);
         container.append(container2);
     });
+    
   }
 </script>
