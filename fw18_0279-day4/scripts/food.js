@@ -15,18 +15,6 @@ let result = async(url) => {
         console.log(res)
     })
 }
-result(url)
 
 
-let array = [];
-let search = (ele) => {
-    
-        let Store_Data = document.getElementById("query").value;
-    array.push(Store_Data);
 
-    localStorage.setItem("search",JSON.stringify(Store_Data))
-    window.location.href="Search.html"
-    
-    
-}
-document.getElementById("btn").addEventListener("click",search)

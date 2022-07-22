@@ -14,7 +14,7 @@ let nav2 = () => {
             <input type="text" placeholder="Enter search" id="query">
 
             <div class="btn">
-            <button id="btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+            <button id="btn" ><i class="fa-solid fa-magnifying-glass"></i></button>
             </div>
 
         </div>`

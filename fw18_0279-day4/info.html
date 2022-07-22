@@ -114,7 +114,33 @@
         text-decoration: underline;
         
       }
+      #information{
+        
+        margin-left: 13%;
+        width: 47%;
+        margin-bottom: 50px;
+        margin-top: 30px;
+      } 
+      #information a{
+        text-decoration: none;
        
+      }
+      h3,h2,th{
+        font-family: arial;
+      }
+      table, td,th {
+  border: 1px solid black;
+  border-collapse: collapse;
+  background-color: hsl(204, 100%, 99%);
+    }
+    
+    
+    .highlight{
+      background-color: #BACFE6;
+    }
+    .nutrient{
+      background-color: #E6EEF6;
+    }
         
     </style>
 </head>
@@ -134,7 +160,110 @@
         <a href="">Protein</a>
      </div>
     
-    <div id="information"></div>
+    <div id="information">
+      
+      <table>
+        <thead>
+          <tr id="bg">
+            <th>
+              <div style="float:left;margin-top: 10px;">
+                <img src="https://a.ftscrt.com/static/images/box/recipesicon.gif" alt="" >
+
+              </div>
+              <div style="float:left;line-height: 10px;">
+                <h2>Popular types of Baked Beans</h2>
+
+              </div>
+            </th>
+            <!-- #region  second head   ***************-->
+            <th  title="Fat">Fat(g)</th>
+            <th  title="Carbohydrates">Carbs(g)</th>
+            <th  title="Protein">Prot(g)</th>
+            <th  title="Calories">Calories</th>
+
+            </tr>
+            <tr id="bg">
+              <td>
+                <h3>Baked Beans</h3>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                   <a href="#">1 cup</a>
+              </td>
+              <td class="nutrient">13.03</td>
+              <td class="nutrient">54.12</td>
+              <td class="nutrient">14.04</td>
+             <td class="highlight ">382</td>
+            </tr>
+
+            <tr>
+              <td>
+                   <a href="#">100 g</a>
+              </td>
+              <td class="nutrient">5.14</td>
+              <td class="nutrient">21.39</td>
+              <td class="nutrient">5.54</td>
+             <td class="highlight ">151</td>
+            </tr>
+           <!-- #region  2nd    **********************-->
+            <tr id="bg">
+              <td>
+                <h3>Vegetarian Baked Beans</h3>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                   <a href="#">1 cup</a>
+              </td>
+              <td class="nutrient">0.94</td>
+              <td class="nutrient">53.70</td>
+              <td class="nutrient">12.06</td>
+             <td class="highlight ">239</td>
+            </tr>
+
+            <tr>
+              <td>
+                   <a href="#">100 g</a>
+              </td>
+              <td class="nutrient">0.37</td>
+              <td class="nutrient">21.14</td>
+              <td class="nutrient">4.75</td>
+             <td class="highlight ">94</td>
+            </tr>
+            <!-- #region  3rd  ******************-->
+              <tr id="bg">
+              <td>
+                <h3>Baked Beans with Pork (Canned)</h3>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                   <a href="#">1 cup</a>
+              </td>
+              <td class="nutrient">3.92</td>
+              <td class="nutrient">50.55</td>
+              <td class="nutrient">13.13</td>
+             <td class="highlight ">268</td>
+            </tr>
+
+            <tr>
+              <td>
+                   <a href="#">100 g</a>
+              </td>
+              <td class="nutrient">1.55</td>
+              <td class="nutrient">19.98</td>
+              <td class="nutrient">5.19</td>
+             <td class="highlight ">106</td>
+            </tr>
+
+          
+        </thead>
+      </table>
+    </div>
     
 </body>
 </html>
