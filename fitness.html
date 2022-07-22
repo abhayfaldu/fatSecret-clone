@@ -5,23 +5,41 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="styles/fintess.css">
+  <link rel="stylesheet" href="styles/header.css">
+  <link rel="stylesheet" href="styles/fitness.css">
+  <script src="https://kit.fontawesome.com/63c7c4276d.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <div id="header">
-    <div id="register">
-      <div class="container">
-        <div>Register</div>
-        &nbsp;|&nbsp;
-        <div>Sign in</div>
-      </div>
-    </div>
-    <div id="logoAndSearch">
-      <div class="container">
-        <div id="logo">
-          <img src="https://a.ftscrt.com/static/images/def20/Fatsecret_logo.png" alt="Fatsecret_logo">
-          <div>INDIA</div>
+  <div id="header"></div>
+  <div class="main">
+    <div class="container">
+      <div id="fitnessBox">
+        <img src="data:image/png;base64,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" alt="">
+        <div>
+          <h1>Fitness</h1>
+          <p>Find exercises that are right for you and start burning calories today!</p>
         </div>
+      </div>
+      <div id="activityFinder">
+        <h2>Activity And Exercise Finder</h2>
+        <div>
+          <input type="search" id="ExerciseSearch">
+          <button>
+            <div>
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            Search
+          </button>
+        </div>
+        <div>
+          <input type="radio" name="difficulties" id="Light"><span> Light</span>
+          <input type="radio" name="difficulties" id="Moderate"><span> Moderate</span>
+          <input type="radio" name="difficulties" id="Strenuous"><span> Strenuous</span>
+          <input type="radio" name="difficulties" id="All"><span> All</span>
+        </div>
+      </div>
+      <div id="exercise">
+        <!-- <h1>Stretching (yoga)</h1> -->
       </div>
     </div>
   </div>
