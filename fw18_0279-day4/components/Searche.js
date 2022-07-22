@@ -1,19 +1,3 @@
-
-
-
-
-
- let url= ` https://api.spoonacular.com/recipes/complexSearch?&maxFat=25&minProtein=10&maxCalcium=100&minVitaminA=0&minVitaminC=0&q=${query}&apiKey=d4f2e76e07764e2b8b1bdeab5bb45695`;
-
-let result = async(url) => {
-    let query = document.getElementById("query").value;
-    let data=await getData(query);
-    append(data)
-    console.log(data)
-}
-document.getElementById("btn").addEventListener("click", result)
-
-
 let getData = async (query) => {
     try {
         let res = await fetch(url)
@@ -56,3 +40,11 @@ let append = (data) => {
     })
 }
 
+/*let array = [];
+let Nedata = (ele) => {
+    array.push(ele);
+    localStorage.setItem("news", JSON.stringify(array));
+    window.location.href="Search.html"
+}*/
+
+export {getData,append}

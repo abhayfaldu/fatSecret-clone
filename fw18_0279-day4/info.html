@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,6 +16,14 @@
             margin-bottom: 20px;
             display: flex;
         }
+        #tag h2{
+            margin-bottom: -50px;
+            
+        }
+        #tag>p{
+            padding-left: 240px;
+            
+        }
         #im{
            border: 4px solid rgb(7, 167, 7); 
            width: 60%;
@@ -29,15 +38,19 @@
             margin-left: 20px;
             font-family: calibri;
         }
-        #tag h2{
-            margin-bottom: -10px;
-        }
+        
+      /* ********* ----  Another Side Part  ---------- ******** */
         #ri{
               background-color: #EDF1E9;
               width: 300px;
               padding: 20px;
               margin-left: 20px;
              
+        }
+       
+        #tag p{
+            margin-left: -240px;
+            margin-top: 60px;
         }
         i{
             font-weight: bold;
@@ -60,57 +73,46 @@
         }
         .btn{
             margin-left: 250px;
-            margin-top: -35px;
+            margin-top: -25px;
             
             width: 55px;
         }
         #ri>input{
             height: 28px;
             width: 220px;
-            margin-left: -300px;
-            margin-top: 30px;
+            
+           
         }
       /* -------------  bottom   ----------------*/
-
-       #hom{
-        height: auto;
-        width: 80%;
-      
-        margin: auto;
-       }
-       div{
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-        grid-template-rows: repeat(5,150px);
-        
-       }
-       img{
-        height: 120px;
-        width: 150px;
-        
-       }
-       h1{
-        color: blue;
+ 
+      .p{
         font-family: arial;
-        font-size: 20px;
-        display: block;
-        width:300px;
+        font-size: 12px;
+        margin-left: 13%;
+      }
+      .p p+p{
+        margin-left: 16%;
+        margin-top: 20px;
+      }
+   
+      .an{
+        margin-left: 12.4%;
+        background-color:  #EDF1E9;
+        width: 31.5%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 200px;
+         
+      }
+      .an a{
+        text-decoration: none;
+         font-family: calibri;
+         color: blue;
+       
+      }
+      .an a:hover{
+        text-decoration: underline;
         
-        
-       }
-       h5{
-        
-        color: blue;
-        font-family: arial;
-        
-       }
-      #K{
-        height: auto;
-        width: 60%;
-        margin-left: -20%;
-        margin-top: -5px;
-        display: block;
-        cursor: pointer;
       }
        
         
@@ -118,28 +120,22 @@
 </head>
 <body>
      <div id="top">
-        <div id="im">
-            <img src="https://img.freepik.com/free-vector/spoon-fork-knife-plate-3d-illustration_33099-205.jpg" alt="">
+     </div>
 
-            <div id="tag">
-                <h2>Foods</h2>
-                <p>Browse common foods and products from your favourite brands and restaurants.<p>
-            </div>
-        </div>
-        <!-- #region right search bar-->
-        <div id="ri">
-            <i>Food Search</i>
-            <input type="text" placeholder="Enter search" id="query">
+     <div class="p">
+<p>Nutritional information for a variety of types and serving sizes of Baked Beans is shown below.</p>
+<p>View Other Nutritional Values Using the Filter Below:</p>
+     </div>
 
-            <div class="btn">
-            <button id="btn"><i class="fa-solid fa-magnifying-glass"></i></button>
-            </div>
-
-        </div>
-      
-    </div>
-    <div id="hom"></div>
+     <div class="an">
+        <a href="">Calories |</a>
+        <a href="">Total Carbs |</a>
+        <a href="">Total Fats |</a>
+        <a href="">Protein</a>
+     </div>
+    
+    <div id="information"></div>
     
 </body>
 </html>
-<script src="./scripts/food.js" type="module"></script>
+<script src="./scripts/info.js" type="module"></script>
