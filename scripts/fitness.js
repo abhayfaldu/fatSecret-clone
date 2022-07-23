@@ -70,7 +70,7 @@ let carousel = () => {
       i = -1;
     }
     i++;
-  }, 2000);
+  }, 10000);
 }
 carouselAppend(0);
 carousel();
@@ -137,33 +137,3 @@ function carouselAppend(i) {
   outerDiv.append(img, innerDiv);
   exercise.append(h1, outerDiv);
 }
-// console.log(document.querySelector("#exercise img > div"));
-
-
-        // <div>
-        //   <img src="https://a.ftscrt.com/static/images/fitness/lrg_dance-(fast-step-aerobic).gif" alt="">
-        //   <div>
-        //     <h3>Estimated Energy Burned <span>for a 70 kg person</span></h3>
-        //     <div class="calories">
-        //       <div>
-        //         <div>5 minutes</div>
-        //         <div>25 calories</div>
-        //       </div>
-        //       <div>
-        //         <div>5 minutes</div>
-        //         <div>25 calories</div>
-        //       </div>
-        //       <div>
-        //         <div>5 minutes</div>
-        //         <div>25 calories</div>
-        //       </div>
-        //       <div>
-        //         <div>5 minutes</div>
-        //         <div>25 calories</div>
-        //       </div>
-        //     </div>
-        //     <div class="viewMore">View more 
-        //       // <i class="fa-solid fa-circle-caret-right"></i>
-        //     </div>
-        //   </div>
-        // </div> 
