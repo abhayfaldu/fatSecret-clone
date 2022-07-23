@@ -1,41 +1,20 @@
-// console.log(1);
 import { header } from "../components/header.js";
 document.querySelector("#header").innerHTML = header();
-// console.log(2);
 
 let searchObj = JSON.parse(localStorage.getItem("searchObj"));
 
 console.log(1.3);
 let searchBtn = document.querySelector("#searchBtn").addEventListener("click", search);
-console.log(1);
 
 function search() {
-  console.log(2);
-  let searchInputVar = document.querySelector("#searchInput")
-  console.log('searchInputVar:', searchInputVar)
-  searchInputVar = searchInputVar.value;
-  console.log("searchInputVar:", searchInputVar);
-  console.log(3);
-  console.log(searchInputVar == "sleeping", searchInputVar);
-  console.log(searchInputVar == "bicycling", searchInputVar);
+
+  let searchInputVar = document.querySelector("#searchInput").value;
+  console.log("searchInputVar:", searchInputVar, "hee");
+
   if (searchInputVar == "sleeping" || searchInputVar == "bicycling") {
-    console.log(4);
     localStorage.setItem("searchVal", searchInputVar);
     mainAppend();
-    // append(searchVal);
-    //   console.log(4)
-    //   append(searchInput);
-    //   console.log(5)
   }
-  //   // if (searchInput === "bicycling") {
-
-  //   // //   append(searchInput);
-  //   //   localStorage.setItem("searchVal", "bicycling");
-  //   // }
-  //   // let searchVal = localStorage.getItem("searchVal");
-  //   // if (searchVal == "sleeping" || searchVal == "bicycling") {
-  //   //   append(searchVal);
-  //   // }
 }
 
 mainAppend();
