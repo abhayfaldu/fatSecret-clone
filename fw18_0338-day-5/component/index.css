@@ -1,0 +1,441 @@
+
+
+#navbar{
+    display: block;
+    display: flex;
+    gap: 60px;
+position: relative;
+}
+#name>h1{
+    display: block;
+ font-size: 50px;
+ color: white;
+}
+h5>a{
+    /* display: block; */
+    color: antiquewhite;
+    text-decoration: none;
+    
+}
+body, html {
+    height: 100%;
+   
+  }
+body{
+    background-image: url(https://static.fatsecret.com/static/images/splash/Sunrise_BG_01.jpg);
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#Top-part{
+    margin-left: 150px;
+}
+#face-logo{
+    margin-top: 50px;
+   width: 400px;
+   height: 50px;
+    display: flex;
+    /* border: 1px solid red; */
+    background-color: rgb(20, 94, 199);
+}
+#face-logo>h4{
+    display: block;
+    margin-left: 50px;
+    margin-top: 13px;
+    font-size: 15px;
+    color: antiquewhite;
+}
+#face-logo>img{
+    margin-left: 10px;
+    margin-right: 40px;
+    width: 30px;
+    height: 30px;
+    margin-top: 6px;
+}
+#google-logo{
+    margin-top: 25px;
+    font-size: 15px;
+    width: 400px;
+    height: 50px;
+     display: flex;
+    
+     /* border: 1px solid red; */
+     background-color: blue ;
+}
+#google-logo>img{
+    margin-right: 40px;
+    width: 40px;
+    height: 100%;
+    /* margin-top: 4px; */
+    background-color: #EDF1E9;
+}
+#google-logo>h4{
+    display: block;
+    margin-left: 50px;
+    margin-top: 13px;
+    color: antiquewhite;
+}
+
+#name>input{
+    height: 50px;
+    width: 200px;
+    border: 1px solid skyblue;
+}
+#name>button{
+    height: 50px;
+    width: 200px;
+    background-color: rgb(65, 181, 65);
+    color: antiquewhite;
+ 
+
+    /* display: block; */
+    /* font-weight: 600; */
+    border: 1px solid rgb(95, 58, 58);
+}
+button>a>h2{
+    text-decoration: none;
+display: block;
+    margin-top: 8px;
+    cursor: pointer;
+}
+button>a{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 20px;
+    cursor: pointer;
+}
+#name>h3{
+    color: antiquewhite;
+}
+#name>h2{
+    color: antiquewhite;
+}
+#img-logo{
+height: 150px;
+width: 300px;
+
+  /* border: 1px soid white; */
+  margin-left: 470px;
+ 
+}
+
+#second_section{
+    /* background-color:#32B34C ; */
+    height: 250px;
+    width: 100%;
+    /* border: 1px solid red; */
+    margin-top: -28px;
+    background-color: #32B34C;
+    margin-left: 0px;
+}
+#card>h1{
+    display: block;
+    font-size: 40px;
+    /* margin: auto; */
+    text-align: center;
+    /* margin-right: 400px; */
+    color: antiquewhite;
+   /* margin-top: 30px; */
+}
+#div1>h3{
+     font-size: 20px;
+     /* text-align: center; */
+     margin-left: 310px;
+     color: antiquewhite;
+}
+/* ------------------> */
+
+element.style {
+    padding: 0px;
+}
+.greenBar {
+    background-color: #32B34C;
+}
+
+td {
+    display: table-cell;
+    vertical-align: inherit;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+style attribute {
+    /* width: 100%; */
+    border-collapse: collapse;
+}
+table {
+    /* border-collapse: separate; */
+    text-indent: initial;
+    /* border-spacing: 2px; */
+    margin-top: -90px;
+   
+}
+body {
+    /* background-color: #FFF; */
+    font-family: Helvetica,Arial;
+    font-size: 13px;
+    margin-left: 0px;
+    margin-right: 0px;
+    /* overflow-y: scroll; */
+}
+.lock-2>img{
+    display: block;
+   margin: auto;
+   margin-top: 80px;
+   background-color: #32B34C;
+}
+
+/* <----------------third section--------------> */
+
+#third_section{
+    width: 100%;
+    height: 325px;
+    background-color: #EDF1E9;
+    /* border: 1px solid red; */
+    
+    
+}
+#para{
+    display: flex;
+}
+.para1{
+    margin: 25px;
+ margin-left: 200px;
+ /* border: 1px solid red; */
+ width: 500px;
+ height: 60%;
+ margin-top: 25px;
+}
+.para1>h1{
+  font-size: 30px;
+  color: #32B34C;
+}
+.para1>li{
+    font-size: 15px;
+  }
+.para2{
+    margin: 30px;
+    margin-left: 150px;
+    margin-top: 20px;
+    height: 60%;
+    width: 80%;
+    /* border: 1px solid red ; */
+}
+.para2>h1{
+  font-size: 35px;
+  color: #32B34C;
+}
+.para2>p{
+    font-size: 15px;
+  }
+ .lock-3>img{
+    /* display: block; */
+    /* border: 1px solid red ; */
+    /* margin-top:-35px;
+    /* margin-left: 725px; */
+    /* margin: auto;  */
+    display: block;
+    margin: auto;
+    margin-top: -35px;
+ }
+  /* fourth section-------------> */
+
+  #fourth-section{
+    width: 100%;
+    height: 325px;
+    background-color: #32B34C;
+    margin-top: -20px;
+    position: absolute;
+  }
+  #card-1{
+    display: block;
+    font-size: 20px;
+    /* margin: auto; */
+    text-align: center;
+    /* margin-right: 400px; */
+    color: antiquewhite;
+    margin-top: 20px;
+  }
+  
+  /* ****************************** */
+  .tertiaryText {
+    font-size: 17px;
+    font-weight: 600;
+    /* margin-left: 10px; */
+}
+p {
+    display: block;
+    /* margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px; */
+}
+p, ul {
+    margin: 0px;
+    line-height: 25px;
+}
+.inlineElement {
+    display: inline-block;
+    /* zoom: 1; */
+    *display: inline;
+    /* margin-left: 10px; */
+}
+.noStyle {
+    margin: 0px;
+    padding: 0px;
+}
+.featureList {
+    vertical-align: top;
+    width: 70%;
+}
+#fifth-section{
+    width: 100%;
+    height: 400px;
+    /* border: 1px solid red; */
+    background-color: #93ADD2;
+    margin-top: 305px;
+    /* position: relative; */
+}
+.lock-4>img{
+    /* margin-top:-30px;
+    margin-left: 725px; */
+    display: block;
+    margin: auto;
+    margin-top: -30px;
+}
+#card-img>img{
+    display: block;
+    margin-left: 1050px;
+    /* border: 1px solid red; */
+margin-top: -230px;
+}
+#card-2{
+    display: block;
+    font-size: 20px;
+    /* margin: auto; */
+    /* text-align: center; */
+    /* margin-right: 400px; */
+    color: antiquewhite;
+    margin-top: 20px;
+    margin-left: 50px;
+  }
+  #sixth-section{
+    background-color: #111;
+    height: 300px;
+    width: 100%;
+    border: 1px solid red;
+  }
+  .lock-5>img{
+    /* display: block; */
+    /* border: 1px solid red ; */
+    /* margin-top:-35px;
+    /* margin-left: 725px; */
+    /* margin: auto;  */
+    display: block;
+    margin: auto;
+    margin-top: -35px;
+ }
+ #img-logo1{
+    margin-top: 10px;
+ }
+ #sixth-section>input{
+    height: 50px;
+    width: 200px;
+    border: 1px solid skyblue;
+    margin-left: 750px;
+}
+#sixth-section>button{
+    height: 50px;
+    width: 200px;
+    background-color: rgb(65, 181, 65);
+    color: antiquewhite;
+    /* display: block; */
+    /* font-weight: 600; */
+    border: 1px solid rgb(95, 58, 58);
+}
+
+#sixth-section>p{
+    color: white;
+    margin-left: 750px;
+    
+}
+#seventh-section{
+    height: 400px;
+    width: 100%;
+    border: 1px solid red;
+    background-color: #EDF1E9;
+}
+
+#img-logo2{
+    display: block;
+    margin-left: 650px;
+    margin-top: 100px;
+}
+#seventh-section>img{
+    margin-top: 70px;
+    margin-left: 600px;
+}
+
+#img-logo2>h4{
+    margin-left: 100px;
+}
+
+#name>h3>a{
+    color: #EDF1E9;
+    text-decoration: none;
+}
+#sixth-section>p>a{
+    color: #EDF1E9;
+    text-decoration: none;
+}
+/* -------------------> */
+#card_section8{
+    width: 100%;
+    height: 250px;
+    background-color: rgb(70, 63, 63);
+    /* margin-top: 50px; */
+   
+}
+#card_section9{
+ width: 100%;
+ height: 100px;
+ background-color: rgb(68, 165, 68);
+ background-attachment: fixed;
+}
+#card_section8>img:nth-child(1){
+ /* display: block; */
+ /* display: flex; */
+ margin-left: 680px;
+}
+#card_section8>img{
+ /* display: block; */
+ /* display: flex; */
+ margin-left: 20px;
+ margin-top: 50px;
+}
+#card_section8>#mar{
+ margin-top: 30px;
+display: flex;
+gap: 20px;
+color: white;
+}
+#card_section8>#mar>p:nth-child(1){
+
+margin-left: 680px;
+}
+#card_section8>#mar1{
+ margin-top: 30px;
+display: flex;
+gap: 20px;
+color: antiquewhite;
+margin-left: 500px;
+font-size: 10px;
+}
+#card_section9>div{
+margin-left: 600px;
+color: antiquewhite;
+/* margin-top: 10px; */
+}

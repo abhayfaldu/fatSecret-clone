@@ -1,0 +1,130 @@
+#top_section{
+    height: 120px;
+    width: 70%;
+    margin: auto;
+    border: 1px solid rgb(135, 186, 206);
+    margin-top: 80px;
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+}
+#top_section>img{
+    margin-left: 50px;
+    display: block;
+    width: 220px;
+    height:50px ;
+    margin-top: 30px;
+}
+#top_section>h1{
+    margin-left: 65%;
+    margin-top: -35px;
+    color: rgb(62, 156, 193);
+    
+}
+/* top section End-------------> */
+
+
+#second_sectin{
+    height: 850px;
+    width: 70%;
+    margin: auto;
+    border: 1px solid rgb(135, 186, 206);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+#second_sectin>h2{
+color:rgb(79, 187, 230) ;
+margin-left: 100px;
+}
+form>h2{
+    color:rgb(79, 183, 223) ;
+    margin-left: 100px;
+    }
+form>#form1{
+    width: 600px;
+    margin: auto;
+    padding: 20px;
+    font-size: 15px;
+    font-family: Verdana;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: blue;
+}
+#form1>label{
+    color: black;
+}
+#form1>span>label,input{
+    margin-bottom: 20px;
+    color: black;
+
+}
+
+#form2{
+    width: 600px;
+    margin: auto;
+    padding: 20px;
+    font-size: 15px;
+    font-family: Verdana;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: rgb(62, 60, 60);
+}
+#form2>span>input{
+    margin-bottom: 10px;
+  width: 100px;
+}
+#form2>span>select{
+    width:350px
+}
+#form3{
+    width: 700px;
+    margin: auto;
+    padding: 20px;
+    font-size: 15px;
+    font-family: Verdana;
+    margin-top: 10px;
+   
+    color: rgb(62, 60, 60);
+}
+#form3>span>input{
+    margin-bottom: 10px;
+    width: 350px;
+   
+}
+#form3>button{
+    width: 170px;
+    height: 30px;
+    border: 1px solid rgb(172, 216, 233);
+ margin-top: 20px;
+    
+}
+#can{
+    font-size: 20px;
+    margin-right: 180px;
+color: rgb(86, 109, 185);
+}
+#can>a{
+    text-decoration: none;
+}
+#nex{
+    background-color: green;
+}
+#nex>a{
+    text-decoration: none;
+    color: antiquewhite;
+    font-size: 20px;
+}
+/* input{
+    padding: 1px;
+    font-size: 20px;
+    width: 150px;
+    
+} */
+select{
+    font-size: 15px;
+    padding: 1px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#myDIV>div{
+    width: 200px;
+    height: 300px;
+    border: 1px solid red;
+}
