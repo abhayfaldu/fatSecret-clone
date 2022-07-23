@@ -1,9 +1,9 @@
 let header = () => {
   return `<div id="register">
       <div class="container">
-        <a href="#" >Register</a>
+        <a href="signup.html" >Register</a>
         &nbsp;|&nbsp;
-        <a href="#" >Sign in</a>
+        <a href="signin.html" >Sign in</a>
       </div>
     </div>
     <div id="logoAndSearch">
@@ -30,9 +30,9 @@ let header = () => {
     </div>
     <div id="navbar">
       <div class="container">
-        <a href="#">MY FATSECRET</a>
-        <a href="#">FOODS</a>
-        <a href="#">RECIPES</a>
+        <a href="index.html">MY FATSECRET</a>
+        <a href="food.html">FOODS</a>
+        <a href="recipes.html">RECIPES</a>
         <a href="fitness.html">FINTESS</a>
         <a href="#">COMMUNITY</a>
         <a href="#"></a>

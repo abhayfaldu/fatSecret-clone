@@ -86,3 +86,34 @@
   line-height: 15px;
   /* display: block; */
 }
+
+#sidebarNav {
+  width: 288px;
+  height: 122px;
+  margin-left: 20px;
+  border: 1px dotted #BACFE6;
+  padding: 10px 5px;
+  background-color: #edf1e9;
+}
+#sidebarNav h4 {
+  padding: 0 0 0 15px;
+  font-size: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+#sidebarNav > a {
+  margin-left: 1px;
+  padding: 0 0 0 15px;
+  display: block;
+  text-decoration: none;
+  font-size: 12px;
+}
+#sidebarNav > a > i {
+  width: 30px;
+  padding: 3px 0 3px 5px;
+  color: #333;
+}
+#sidebarNav > a > span {
+  color: #028cc4;
+}
