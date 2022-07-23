@@ -1,0 +1,88 @@
+.main .container {
+  width: 986px;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  display: flex;
+}
+#search {
+  width: 650px;
+  /* height: 150px; */
+  padding: 24px 90px;
+  border: 1px dotted #88a8cf;
+}
+#search h1 {
+  padding: 1px;
+  font-size: 26px;
+  color: #333;
+}
+#search > div {
+  border-bottom: 1px dashed #88a8cf;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  /* width: 100%; */
+}
+#search > div > div {
+  width: 83px;
+  display: flex;
+
+}
+#search h1 + div > input {
+  /* border: 1px solid green; */
+  /* display: block; */
+  width: 380px;
+}
+#search h1 + div + div input {
+  /* border: 1px solid green; */
+  margin-left: 5px;
+}
+#search .radio {
+  /* border: 1px solid red; */
+  display: flex;
+  font-size: 13px;
+}
+#search button {
+  margin: 0 0 0 20px;
+  background-color: #028cc4;
+  height: 28px;
+  width: 94px;
+  border: 1px solid lightgray;
+  display: flex;
+  /* place-items: center; */
+  color: white;
+  justify-content: center;
+  align-items: center;
+  /* justify-self: flex-end; */
+  /* display: block; */
+  margin-left: 372px;
+  margin-top: 8px;
+}
+#search button i {
+  margin-right: 5px;
+  padding-top: 5px;
+}
+#results {
+  width: 650px;
+  margin-top: 20px;
+  /* border: 1px solid #333; */
+  /* margin: auto; */
+  
+}
+#results > div {
+  padding: 8px 0px;
+  border-bottom: 1px solid #E6EEF6;
+}
+#results h3 {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 18px;
+  color: #028cc4;
+}
+#results > div > h3 + div {
+  /* border: 1px solid #333; */
+  color: #555;
+  font-size: 11px;
+  line-height: 15px;
+  /* display: block; */
+}

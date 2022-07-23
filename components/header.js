@@ -9,7 +9,9 @@ let header = () => {
     <div id="logoAndSearch">
       <div class="container">
         <div id="logo">
-          <img src="https://a.ftscrt.com/static/images/def20/Fatsecret_logo.png" alt="Fatsecret_logo">
+          <a href="fitness.html">
+            <img src="https://a.ftscrt.com/static/images/def20/Fatsecret_logo.png" alt="Fatsecret_logo">
+          </a>
           <div>INDIA</div>
         </div>
         <div id="searchDiv">
@@ -31,7 +33,7 @@ let header = () => {
         <a href="#">MY FATSECRET</a>
         <a href="#">FOODS</a>
         <a href="#">RECIPES</a>
-        <a href="#">FINTESS</a>
+        <a href="fitness.html">FINTESS</a>
         <a href="#">COMMUNITY</a>
         <a href="#"></a>
       </div>
