@@ -5,6 +5,7 @@
   width: 986px;
   margin: auto;
   margin-top: 20px;
+  margin-bottom: 40px;
 }
 #fitnessBox {
   height: 105px;
@@ -76,8 +77,9 @@
 #exercise {
   width: 650px;
   border: 2px dotted #7bcee4;
+  background-color: #EBF9FC;
   padding: 13px 0px 13px 13px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 #exercise h1 {
   font-size: 20px;
@@ -114,7 +116,7 @@
   border-bottom: 1px solid #ddd;
   padding: 5px;
   font-size: 12px;
-  color:#333;
+  color: #333;
   display: flex;
   justify-content: space-between;
 }
@@ -123,6 +125,72 @@
   margin: 10px 0 3px;
   font-size: 13px;
 }
-  #exercise .viewMore i {
-    color: #028cc4;
-  }
+#exercise .viewMore i {
+  color: #028cc4;
+}
+#table {
+  width: 650px;
+}
+#table > :nth-child(1) {
+  display: flex;
+  justify-content: space-between;
+}
+#table > :nth-child(1) h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 2px 0 6px 0;
+}
+table {
+  width: 100%;
+  border-spacing: 0;
+}
+table tr:first-child {
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  column-span: 2;
+}
+table tr td {
+  width: 33%;
+  border: 1px solid #d0d0e4;
+  font-size: 12px;
+  padding: 1px 1px 1px 5px;
+  /* display: flex;
+  justify-content: space-between; */
+}
+table tr:nth-child(2) td {
+  text-align: right;
+}
+
+tr {
+  border: 1px solid green;
+  width: 300px;
+}
+
+/* table tr:nth-child(3) td.flex,
+table tr:nth-child(4) td.flex,
+table tr:nth-child(5) td.flex,
+table tr:nth-child(6) td.flex,
+table tr:nth-child(7) td.flex,
+table tr:nth-child(8) td.flex {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #333;
+} */
+
+#table td {
+
+  border-bottom: 1px solid #DAE6F2;
+}
+#table td div {
+  display: flex;
+  justify-content: space-between;
+}
+#table td > div div:first-child {
+  color:#028cc4;
+}
+#table td > div  div:last-child {
+  background-color: #fcf3e5;
+  padding: 1px 5px 1px 30px;
+}

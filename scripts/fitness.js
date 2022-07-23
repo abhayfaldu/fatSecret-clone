@@ -60,6 +60,57 @@ const exerciseArr = [
     },
   },
 ];
+
+let searchObj = {
+  sleeping: [
+    {
+      heading: "Sleeping",
+      intensity: "high",
+      met: 0.9,
+      calories: 66,
+    }
+  ],
+  bicycling: [
+    {
+      heading: "Bicycling(Fast) - 24/kph",
+      intensity: "Strenuous",
+      met: 10.0,
+      calories: 735,
+    },
+    {
+      heading: "Bicycling (leisurely) - <16/kph",
+      intensity: "Moderate",
+      met: 4.0,
+      calories: 294,
+    },
+    {
+      heading: "Bicycling (moderate) - 21/kph",
+      intensity: "Moderate",
+      met: 8.0,
+      calories: 588,
+    },
+    {
+      heading: "Bicycling (slow) - 18/kph",
+      intensity: "Moderate",
+      met: 6.0,
+      calories: 441,
+    },
+    {
+      heading: "Bicycling (very fast) - 28/kph",
+      intensity: "Strenuous",
+      met: 12.0,
+      calories: 882,
+    },
+    {
+      heading: "Bike Machine (Cycling)",
+      intensity: "Strenuous",
+      met: 8.0,
+      calories: 588,
+    },
+  ],
+};
+localStorage.setItem("searchObj", JSON.stringify(searchObj));
+
 let carousel = () => {
   
   let i = 1;
@@ -70,7 +121,7 @@ let carousel = () => {
       i = -1;
     }
     i++;
-  }, 2000);
+  }, 10000);
 }
 carouselAppend(0);
 carousel();
@@ -137,33 +188,14 @@ function carouselAppend(i) {
   outerDiv.append(img, innerDiv);
   exercise.append(h1, outerDiv);
 }
-// console.log(document.querySelector("#exercise img > div"));
-
-
-        // <div>
-        //   <img src="https://a.ftscrt.com/static/images/fitness/lrg_dance-(fast-step-aerobic).gif" alt="">
-        //   <div>
-        //     <h3>Estimated Energy Burned <span>for a 70 kg person</span></h3>
-        //     <div class="calories">
-        //       <div>
-        //         <div>5 minutes</div>
-        //         <div>25 calories</div>
-        //       </div>
-        //       <div>
-        //         <div>5 minutes</div>
-        //         <div>25 calories</div>
-        //       </div>
-        //       <div>
-        //         <div>5 minutes</div>
-        //         <div>25 calories</div>
-        //       </div>
-        //       <div>
-        //         <div>5 minutes</div>
-        //         <div>25 calories</div>
-        //       </div>
-        //     </div>
-        //     <div class="viewMore">View more 
-        //       // <i class="fa-solid fa-circle-caret-right"></i>
-        //     </div>
-        //   </div>
-        // </div> 
+let searchBtn = document.querySelector("#searchBtn").addEventListener("click", search)
+function search () {
+  let query = document.querySelector("#ExerciseSearch").value;
+  if (query === "sleeping") {
+    localStorage.setItem("searchVal", "sleeping");
+    window.location.href = "activities.html"
+  } else if (query === "bicycling") {
+    localStorage.setItem("searchVal", "bicycling");
+    window.location.href = "activities.html"
+  }
+}
