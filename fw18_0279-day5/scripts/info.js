@@ -1,5 +1,4 @@
-
-import { nav2 } from "../components/foode.js";
+import { nav2 } from "../components/infonav.js";
 document.getElementById("top").innerHTML = nav2();
 
 let array2 = JSON.parse(localStorage.getItem("news"))
