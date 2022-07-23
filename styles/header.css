@@ -8,15 +8,18 @@
   box-sizing: border-box;
   /* background-color: rgba(0, 50, 0, 0.3); */
 }
-.container {
+#header {
+  margin-bottom: 20px;
+}
+#header .container {
   width: 986px; 
   margin: auto;
 }
-#register {
+#header #register {
   background-color: var(--green);
   height: 28px;
 }
-#register .container {
+#header #register .container {
   height: 100%;
   display: flex;
   justify-content: flex-end;
@@ -24,15 +27,19 @@
   color: white;
   font-size: 12px;
 }
-#register .container a {
+#header #register .container a {
   color: white;
   text-decoration: none;
 }
-#logoAndSearch {
+#header #logoAndSearch {
   padding: 18px 0 10px;
   background-color: #edf1e9;
 }
-#logoAndSearch img + div {
+#header #logoImg {
+  width: 214px;
+  height: 50px;
+}
+#header #logoAndSearch img + div {
   display: flex;
   /* justify-content: flex-end; */
   margin: -5px 0px 0 183px;
@@ -40,7 +47,7 @@
   font-size: 11px;
   color: var(--green);
 }
-#searchDiv {
+#header #searchDiv {
   width: 240px;
   height: 27px;
   /* border: 1px solid gray; */
@@ -48,51 +55,51 @@
   display: flex;
   align-items: center;
 }
-#searchDiv > * {
+#header #searchDiv > * {
   border: 1px solid gray;
 }
-#searchDiv > :first-child {
+#header #searchDiv > :first-child {
   height: 100%;
   display: flex;
   padding: 0px 2px;
   align-items: center;
 }
-.fa-utensils {
+#header .fa-utensils {
   color:#474f52;
 }
-.fa-caret-down {
+#header .fa-caret-down {
   margin-left: 5px;
   color: #28a2ca;
 }
-#searchDiv{
+#header #searchDiv{
   margin-top: 3px;
 }
-#searchDiv > div:nth-child(2) input{
+#header #searchDiv > div:nth-child(2) input{
   border: 0;
   padding: 5px 0 6px;
   background-color: #edf1e9;
   font-size: 12px;
   /* border:1px solid #28a2ca; */
 }
-#searchDiv > :nth-child(3){
+#header #searchDiv > :nth-child(3){
   height: 27px;
   padding: 4px 13px;
   margin-left: 3px;
 }
-#searchInput {
+#header #searchInput {
   padding: 3px;
   margin: 0 3px;
 }
-#navbar {
+#header #navbar {
   border: 1px solid #ccc;
   background-color: #edf1e9;
   height: 25px;
 }
-#navbar .container {
+#header #navbar .container {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
 }
-#navbar a {
+#header #navbar a {
   /* height: 100%; */
   /* display: block; */
   padding: 4px 0 5px;
@@ -104,7 +111,7 @@
   color:#93A9C3;
   text-decoration: none;
 }
-#navbar a:hover{
+#header #navbar a:hover{
   cursor: pointer;
   background-color: #fff;
   color: #5b89ee;

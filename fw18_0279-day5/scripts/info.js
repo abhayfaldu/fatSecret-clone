@@ -1,6 +1,9 @@
 import { nav2 } from "../components/infonav.js";
 document.getElementById("top").innerHTML = nav2();
 
+import { header } from "../components/header.js";
+document.querySelector("#header").innerHTML = header();
+
 let array2 = JSON.parse(localStorage.getItem("news"))
 append(array2)
 

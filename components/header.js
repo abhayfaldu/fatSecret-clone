@@ -9,8 +9,8 @@ let header = () => {
     <div id="logoAndSearch">
       <div class="container">
         <div id="logo">
-          <a href="fitness.html">
-            <img src="https://a.ftscrt.com/static/images/def20/Fatsecret_logo.png" alt="Fatsecret_logo">
+          <a href="/hard-ear-2917/fw18_0338-day-5/index.html">
+            <img src="https://a.ftscrt.com/static/images/def20/Fatsecret_logo.png" alt="Fatsecret_logo" id="logoImg">
           </a>
           <div>INDIA</div>
         </div>
@@ -30,10 +30,10 @@ let header = () => {
     </div>
     <div id="navbar">
       <div class="container">
-        <a href="index.html">MY FATSECRET</a>
-        <a href="food.html">FOODS</a>
-        <a href="recipes.html">RECIPES</a>
-        <a href="fitness.html">FINTESS</a>
+        <a href="#">MY FATSECRET</a>
+        <a href="/hard-ear-2917/fw18_0279-day5/food.html">FOODS</a>
+        <a href="/hard-ear-2917/fw19_1004_day_5/recipe.html">RECIPES</a>
+        <a href="/hard-ear-2917/fitness.html">FINTESS</a>
         <a href="#">COMMUNITY</a>
         <a href="#"></a>
       </div>

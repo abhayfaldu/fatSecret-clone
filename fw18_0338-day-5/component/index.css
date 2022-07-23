@@ -1,7 +1,6 @@
 
 
 #navbar{
-    display: block;
     display: flex;
     gap: 60px;
 position: relative;
