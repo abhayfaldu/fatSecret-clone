@@ -1,0 +1,443 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #main{
+            display: flex;
+            width: 70%;
+            height: auto;
+            margin: auto;
+            margin-top: 20px;
+        }
+
+        #info{
+            display: flex;
+            border: 5px dotted rgb(136, 209, 223);
+            width: 600px;
+            height: fit-content;
+        }
+        img{
+            width: 130px;
+            height: 130px;
+        }
+        #leftinfo{
+            display: block;
+            /* border: 1px solid blue; */
+            margin-left: 3px;
+        }
+        #leftinfo>div{
+            border: 1px solid grey;
+            margin-bottom: 5.5px;
+            background-color: #EBF9FC;
+        }
+        #rightinfo{
+            /* border: 1px solid green; */
+            display: block;
+            width: 450px;
+            margin-left: 6px;
+        }
+        #heading{
+        color: #333;
+        font-family: Helvetica,Arial;
+        font-size: 16px;
+        /* margin-top: 0%; */
+        /* margin: 2px 0px 6px 0px; */
+        height: fit-content;
+        justify-content: center;
+        }
+        #ingred{
+         color: #028CC4;
+        text-decoration: none;
+        font-size: 13px;
+        line-height: 1px;
+        /* margin-top: -10px; */
+        margin-bottom: -6px;
+        height: fit-content;
+        }
+        #dir{
+        color: #333;
+        font-size: 13px;
+        line-height: 16px;
+        word-break: break-word;
+        /* margin-top: -10px; */
+        height: fit-content;
+
+        }
+        #bx {
+        border:none;
+        border-top:1px solid rgb(136, 209, 223);
+        color:#fff;
+        background-color:#fff;
+        height:1px;
+        width:100%;
+        margin-top: -10px;
+        }
+       #point{
+        color: #333;
+        font-family: Helvetica,Arial;
+        font-size: 14.5px;
+        }
+        #meal{
+            align-items: center;
+            font-size: 12px;
+            font-family: Helvetica,Arial;
+            line-height: 8px;
+            
+        }
+        #time{
+            font-size: 15px;
+            line-height: 0px;
+            font-family: Helvetica,Arial;
+        }
+        #time>h5{
+            font-family: Helvetica,Arial;
+            margin-left: 5px;
+        }
+        #rs{
+            width: 350px;
+            height: 650px;
+            margin-left: 10px;
+        }
+        /* -----------------------------------------------------------------------------------------------------------------------------------------
+         */
+         #nutout{
+            width: 340px;
+            height: 640px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #EDF1E9;
+        }
+        #nutrition{
+            border: 2px solid grey;
+            width: 300px;
+            height: 600px;
+            background-color: white;
+            font-family: "Arial";
+        }
+        hr{
+        border:none;
+        border-top:1px solid grey;
+        height:1px;
+        width:100%;
+        margin: 0%;
+        }
+        h1{
+            text-align: center;
+        }
+        #alldt{
+            display: flex;
+            
+            width: 100%;
+            height: 100%;
+        }
+        #dt1{
+            display: block;
+            
+            width: 100%;
+            height: 100%
+        }
+        #dt2{
+            display: block;
+          
+            width: 100%;
+            height: 100%
+        }
+        #dt1>div{
+            border: 1px solid rgb(249, 249, 249);
+            width: 98%;
+            height: 5%;
+            justify-content: center;
+        }
+        #dt2>div{
+            border: 1px solid rgb(255, 255, 255);
+            width: 95%;
+            height: 5%;
+            text-align: end;
+            padding-right: 2px;
+        }
+        h2{
+            font-size: 13px;
+        }
+        h3{
+            font-size: 11px;
+        }
+        #bold{
+        border-top:8px solid grey;
+        height:1px;
+        width:100%; 
+        margin: 0%;
+        }
+        #last{
+        border-top:4px solid grey;
+        height:1px;
+        width:100%; 
+        margin: 0%;  
+        }
+    </style>
+</head>
+<body onload="showinfo()">
+    <div id="main">
+    <div id="info">
+        <div id="leftinfo">
+            <div id="recipimg"></div>
+            <div id="time"></div>
+            <div id="meal">
+                <b><p>Meal Type :</p></b>
+                <p>Main Dishes</p>
+            </div>
+        </div>
+        <div id="rightinfo">
+            <div id="heading"></div>
+            <hr id="bx">
+            <h2 id="point">Ingredients</h2>
+            <hr id="bx">
+            <div id="ingred"></div>
+            <h2 id="point">Direction</h2>
+            <hr id="bx">
+            <div id="dir"></div>
+        </div>
+    </div>
+    <div id="rs">
+        <div id="nutout">
+            <div id="nutrition">
+                <h1>Nutrition Facts</h1>
+                <hr>
+                <div id="alldt">
+                  <div id="dt1">
+                    <div>Serving Size</div>
+                    <hr id="bold">
+                    <div></div>
+                    <hr id="last">
+                    <div><h2>Calories</h2></div>
+                    <hr>
+                    <div><h2>Fat</h2></div>
+                    <div><h3>Saturated Fat</h3></div>
+                    <hr>
+                    <div><h2>Carbohydrates</h2></div>
+                    <div><h3>Sugar</h3></div>
+                    <hr>
+                    <div><h3>Fibre</h3></div>
+                    <hr>
+                    <div><h2>protein</h2></div>
+                    <hr>
+                    <div><h3>Sodium</h3></div>
+                    <hr>
+                    <div><h3>Cholestrol</h3></div>
+                    <hr>
+                    <div><h3>Potassium</h3></div>
+                    <hr>
+                    <div><h3>Magnesium</h3></div>
+                    <hr>
+                    <div><h3>Calcium</h3></div>
+                    <hr id="last">
+                  </div>
+                  <div id="dt2">
+                    <div>per serve</div>
+                    <hr id="bold">
+                    <div>Per serve</div>
+                    <hr id="last">
+                    <div id="cal"></div>
+                    <hr>
+                    <div id="fati"></div>
+                    <div id="satu"></div>
+                    <hr>
+                    <div id="carbs"></div>
+                    <div id="sug"></div>
+                    <hr>
+                    <div id="fibr"></div>
+                    <hr>
+                    <div id="prt"></div>
+                    <hr>
+                    <div id="sod"></div>
+                    <hr>
+                    <div id="cho"></div>
+                    <hr>
+                    <div id="k"></div>
+                    <hr>
+                    <div id="mg"></div>
+                    <hr>
+                    <div id="calcium"></div>
+                    <hr id="last">
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
+
+<script>
+  let  showinfo=()=>{
+    let showinfo=JSON.parse(localStorage.getItem("recipeinfo"));
+    console.log(showinfo);
+    let id=showinfo.id;
+    let info=document.getElementById("info");
+    let leftinfo=document.getElementById("leftinfo");
+    let time=document.getElementById("time");
+    let recipimg=document.getElementById("recipimg")
+    let rightinfo=document.getElementById("rightinfo");
+    let heading=document.getElementById("heading");
+    let ingred=document.getElementById("ingred");
+    let dir=document.getElementById("dir");
+    let img=document.createElement("img");
+    img.src=`https://spoonacular.com/recipeImages/${id}-312x231.jpg`;
+    recipimg.append(img);
+    let title=document.createElement("h1");
+    title.innerText=showinfo.title;
+    heading.append(title);
+    
+    let x = Math.floor((Math.random() * 100));
+    let y = Math.floor((Math.random() * 100));
+    let preptime=document.createElement("h5");
+    preptime.innerText="Preperation Time:"
+    
+    let timeval1=document.createElement("h6");
+    timeval1.innerText=`${x} Mins`;
+    let timeval2=document.createElement("h6");
+    timeval2.innerText=`${y} Mins`;
+    let cooktime=document.createElement("h5");
+    cooktime.innerText="Cooking Time:"
+    time.append(preptime,timeval1,cooktime,timeval2);
+
+
+    let url=`https://api.spoonacular.com/recipes/${id}/analyzedInstructions?&apiKey=2789908aa7c14057a83c92fcadf0428e`;
+
+    let showData= async ()=>{
+  try {
+    let res =await fetch(url);
+    let data = await res.json();
+    // append1(data.steps)
+    console.log(data);
+    append(data);
+
+  } catch (error) {
+    console.log(error);
+  }
+}
+showData();
+     
+    let append=(data)=>{
+        let container=document.getElementById("info");
+        data.forEach((el) => {
+            el.steps.forEach((el)=>{
+                
+                let step=document.createElement("p");
+                step.innerText=el.step;
+                dir.append(step);
+
+                el.ingredients.forEach((el)=>{
+                    let h4=document.createElement("h4");
+                    h4.innerText=el.name;
+
+                    ingred.append(h4);
+                })
+            })
+        });
+    }
+
+    
+    url1=`https://api.spoonacular.com/recipes/${id}/nutritionWidget.json?&apiKey=2789908aa7c14057a83c92fcadf0428e`;
+    let showD= async ()=>{
+    try {
+        let res =await fetch(url1);
+        let data = await res.json();
+        console.log(data);
+         append3(data);
+
+    } catch (error) {
+        console.log(error);
+    }
+    }
+    showD();
+    let append3=(data)=>{
+        let container=document.getElementById("cal");
+        let calories=document.createElement("h3");
+        calories.innerText=data.calories;
+        cal.append(calories);
+        
+        let carb=document.createElement("h3");
+        carb.innerText=data.carbs;
+        carbs.append(carb);
+        
+        let prtn=document.createElement("h3");
+        prtn.innerText=data.protein;
+        prt.append(prtn);
+        let fat=document.createElement("h3");
+        fat.innerText=data.fat;
+        fati.append(fat);
+
+
+        let sodi=document.createElement("h3");
+        data.bad.forEach((el)=> { 
+            sodi.innerText=el.amount;
+        });
+        sod.append(sodi);
+
+        let chol=document.createElement("h3");
+        data.bad.forEach((el)=> { 
+            if(el.title=="Cholesterol"){
+                chol.innerText=el.amount;
+            }
+        });
+        cho.append(chol);
+
+        let sfat=document.createElement("h3");
+        data.bad.forEach((el)=> { 
+            if(el.title=="Saturated Fat"){
+                sfat.innerText=el.amount;
+            }
+        });
+        satu.append(sfat);
+
+        let suger=document.createElement("h3");
+        data.bad.forEach((el)=> { 
+            if(el.title=="Sugar"){
+                suger.innerText=el.amount;
+            }
+        });
+        sug.append(suger);
+
+        let fibre=document.createElement("h3");
+        data.good.forEach((el)=> { 
+            if(el.title=="Fiber"){
+                fibre.innerText=el.amount;
+            }
+        });
+        fibr.append(fibre);
+
+        let calc=document.createElement("h3");
+        data.good.forEach((el)=> { 
+            if(el.title=="Calcium"){
+                calc.innerText=el.amount;
+            }
+        });
+        calcium.append(calc);
+        
+        
+        let pot=document.createElement("h3");
+        data.good.forEach((el)=> { 
+            if(el.title=="Potassium"){
+                pot.innerText=el.amount;
+            }
+        });
+        k.append(pot);
+
+        let mag=document.createElement("h3");
+        data.good.forEach((el)=> { 
+            if(el.title=="Magnesium"){
+                mag.innerText=el.amount;
+            }
+        });
+        mg.append(mag);                      
+    }
+
+
+  }
+
+  
+</script>

@@ -1,0 +1,313 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            display: flex;
+            /* border: 1px solid red; */
+            width: 70%;
+            height: 100%;
+            margin: auto;
+        }
+        #container>div:first-child{
+            width: 71%;
+            height: 100%;
+        }
+        #container>div:last-child{
+            width: 27%;
+            height: 20%;
+        }
+        #left>div:first-child{
+            border: 4px solid rgb(80, 191, 80);
+            width: 95%;
+            height: 15%;
+        }
+        #lefthead{
+            display: flex;
+            margin-bottom: 8px;
+        }
+        #lefthead>div:first-child{
+            width: 23%;
+        }
+         #lefthead>div>img{
+            width:120px;
+            height: 100%;
+            background-color: antiquewhite;
+        }
+        #lefthead>div:last-child{
+            line-height: 13px;
+            margin-top: 20px;
+        }
+        #lefthead>div:last-child>h1{
+            color: #5E5E53;
+            font-size: 26px;
+            font-weight: bold;
+            font-family: Helvetica,Arial;
+        }
+        #lefthead>div:last-child>h3{
+            color: #333333;
+            font-size: 13px;
+            font-family: Helvetica,Arial;
+            margin-top: 0px;
+        }
+        #right{
+            padding-left: 15px;
+            padding-top: 20px;
+            background-color: #EDF1E9;
+            margin-left: 10px;
+        }
+        #right>h1{
+            font-size: 15px;
+            font-family: "Trebuchet MS";
+            font-style: italic;
+        }
+        #right>button{
+            color: white;
+            background-color: #028CC4;
+            border-radius: 5px;
+            border: 1px solid #028CC4 ;
+        }
+        #right>input{
+            font-size: 11px;
+            
+        }
+        #name{
+            height: 22px;
+            width: 250px;
+            margin-bottom:10px ;
+        }
+        #container1{
+            display: block;
+        }
+        .con2{
+            display: flex;
+            /* border: 1px solid grey; */
+            height: 60px;
+            width: 100%;
+            margin-bottom: 10px;
+            box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+        }
+        /* .con2>div{
+            /* border: 1px solid blue; */
+        /* }  */
+        .con2>div:first-child>img{
+   
+            height: 100%;
+            width: 60px;
+        }
+        .con2>div:nth-child(2){
+            line-height: 18px;
+            margin-left: 3px;
+            width: 300px;
+            
+        }
+        .con2>div:nth-child(2)>h3{
+            margin-top: 3px;
+        }
+        .recipelisthead{
+            color: #028CC4;
+            font-weight: bold;
+            font-size: 18px;
+            font-family: Helvetica,Arial;
+        }
+        .recipelisthead:hover, .recipelisthead:active{
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        #catagories{
+            display: block;
+        }
+        #catagories>.con3>div:first-child>img{
+            height: 100%;
+            width: 60px;
+        }
+        .con3{
+            display: flex;
+             border: 1px solid grey; 
+            height: 60px;
+            width: 100%;
+            margin-bottom: 3px;
+        }
+        .con3>div:first-child>img{
+   
+        height: 100%;
+         width: 60px;
+        }
+        .con3>div:last-child{
+        line-height: 18px;
+        margin-left: 3px;
+   
+        }
+        .con3>div:last-child>h3{
+        margin-top: 3px;
+        }
+        h4{
+        font-size: 13px;
+        color: rgb(55, 55, 55);
+        margin-right: 0px;
+        }
+        img{
+            height: 100%;
+         width: 60px;  
+        }
+        .con2>div:last-child{
+        display: flex;
+        font-size: 10px;
+        height: 27px;
+        margin-top: 33px;
+        color: #333;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="left">
+            <div id="lefthead">
+                <div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYaYWH0QF0M4BgmIiFjYraT3ft2axUFkHDCg&usqp=CAU" alt="">
+                </div>
+                <div>
+                    <h1>Recipes</h1>
+                    <h3>Find great recipes for any meal, food or diet, rated and reviewed for you.</h3>
+                </div>
+            </div>
+            <div id="leftbody">
+                <div id="catagories">
+                </div>
+                <div id="container1">
+                    <div></div>
+                </div>
+            </div>
+        </div>
+        <div id="right">
+            <h1>Food Search</h1>
+            <input type="text" name="" placeholder="Enter Search" id="query">
+            <button onclick="search()">Search</button>
+            <br>
+            <input type="radio" name="ctl12__ctrl_0type" value="1" checked="checked">Recipes
+            <br>
+            <input type="radio" name="ctl12__ctrl_0type"  value="2">Food
+            
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    let url = "https://api.spoonacular.com/recipes/complexSearch?query=vegan&minProtein=0&minCalories=50&maxFat=25&minCarbs=10&apiKey=2789908aa7c14057a83c92fcadf0428e";
+
+let showData= async ()=>{
+  try {
+    let res =await fetch(url);
+    let data = await res.json();
+    append1(data.results)
+    console.log(data.results);
+
+
+  } catch (error) {
+    console.log(error);
+  }
+}
+showData();
+let x = Math.floor((Math.random() * 100));
+let append1 = (data) =>{
+  let categories = document.getElementById("categories");
+  catagories.innerHTML= null;
+
+    data.forEach((el) => {
+        let img= document.createElement("img");
+        img.src=el.image;
+
+        let h3=document.createElement("h3");
+        h3.innerText=el.title;
+        h3.setAttribute('class','recipelisthead');
+        h3.onclick=()=>{
+            info(el);
+        }
+
+        let div1=document.createElement("div");
+
+        let div2=document.createElement("div");
+        let container2=document.createElement("div");
+        container2.setAttribute('class','con2');
+
+        div1.setAttribute('class','video');
+        let div3=document.createElement("div");
+
+        el.nutrition.nutrients.forEach((el)=>{
+            let amount=document.createElement("p");
+            amount.innerText=el.name+":"+el.amount+el.unit+"|";
+            div3.append(amount);
+        })
+        div1.append(img);
+        div2.append(h3);
+        container2.append(div1,div2,div3);
+        catagories.append(container2);
+    });
+}
+
+
+
+    const api_key = "2789908aa7c14057a83c92fcadf0428e";
+    let search = async() =>{
+    let categories = document.getElementById("categories");
+    catagories.innerHTML= null;
+    let query=document.getElementById("query").value;
+    let data= await getdata(query);
+    append(data);
+    console.log(data);
+  }
+  
+  let getdata= async (query) => {
+    let url= ` https://api.spoonacular.com/recipes/complexSearch?query=${query}&minProtein=0&minCalories=50&maxFat=25&minCarbs=10&apiKey=${api_key}`;
+     
+    let res=await fetch(url);
+    let data= await res.json();
+    return data.results;
+    console.log(data.results);
+    
+  }
+  let append = (data) => {
+    let container=document.getElementById("catagories");
+    container.innerHTML= null;
+
+    data.forEach((el) => {
+        let img= document.createElement("img");
+        img.src=el.image;
+
+        let h3=document.createElement("h3");
+        h3.innerText=el.title;
+        h3.setAttribute('class','recipelisthead');
+        h3.onclick=()=>{
+            info(el);
+        }
+
+        let div1=document.createElement("div");
+        let div2=document.createElement("div");
+        let container2=document.createElement("div");
+        let div3=document.createElement("div");
+
+        el.nutrition.nutrients.forEach((el)=>{
+            let amount=document.createElement("p");
+            amount.innerText=el.name+":"+el.amount+el.unit+"|";
+            div3.append(amount);
+        })
+        container2.setAttribute('class','con2');
+        
+        div1.setAttribute('class','video');
+        div1.append(img);
+        div2.append(h3);
+        container2.append(div1,div2,div3);
+        container.append(container2);
+    });
+    
+  }
+
+let info=(data)=>{
+    localStorage.setItem("recipeinfo",JSON.stringify(data));
+    window.location.href="recipeinformation.html";
+    console.log(data);
+}
+</script>
