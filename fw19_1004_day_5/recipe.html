@@ -13,11 +13,11 @@
             margin: auto;
         }
         #container>div:first-child{
-            width: 72%;
+            width: 71%;
             height: 100%;
         }
         #container>div:last-child{
-            width: 28%;
+            width: 27%;
             height: 20%;
         }
         #left>div:first-child{
@@ -57,6 +57,7 @@
             padding-left: 15px;
             padding-top: 20px;
             background-color: #EDF1E9;
+            margin-left: 10px;
         }
         #right>h1{
             font-size: 15px;
@@ -64,7 +65,10 @@
             font-style: italic;
         }
         #right>button{
-            color: blue;
+            color: white;
+            background-color: #028CC4;
+            border-radius: 5px;
+            border: 1px solid #028CC4 ;
         }
         #right>input{
             font-size: 11px;
@@ -83,8 +87,8 @@
             /* border: 1px solid grey; */
             height: 60px;
             width: 100%;
-            margin-bottom: 3px;
-            box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+            margin-bottom: 10px;
+            box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
         }
         /* .con2>div{
             /* border: 1px solid blue; */
@@ -110,7 +114,8 @@
             font-family: Helvetica,Arial;
         }
         .recipelisthead:hover, .recipelisthead:active{
-            font-size: 130%;
+            text-decoration: underline;
+            cursor: pointer;
         }
         #catagories{
             display: block;
@@ -150,11 +155,12 @@
         }
         .con2>div:last-child{
         display: flex;
-        font-size: 13px;
+        font-size: 10px;
         height: 27px;
         margin-top: 33px;
+        color: #333;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
         }
-        
     </style>
 </head>
 <body>
@@ -169,7 +175,8 @@
                 </div>
             </div>
             <div id="leftbody">
-                <div id="catagories"></div>
+                <div id="catagories">
+                </div>
                 <div id="container1">
                     <div></div>
                 </div>
