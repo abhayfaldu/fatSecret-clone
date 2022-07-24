@@ -1,5 +1,4 @@
-import { nav2 } from "../components/infonav.js";
-document.getElementById("top").innerHTML = nav2();
+
 
 import { header } from "../components/header.js";
 document.querySelector("#header").innerHTML = header();
