@@ -262,7 +262,7 @@ color: antiquewhite;
         <div id="right">
             <h1>Food Search</h1>
             <input type="text" name="" placeholder="Enter Search" id="query">
-            <button onclick="search()">Search</button>
+            <button >Search</button>
             <br>
             <input type="radio" name="ctl12__ctrl_0type" value="1" checked="checked">Recipes
             <br>
@@ -363,7 +363,7 @@ let append1 = (data) =>{
 
 
     const api_key = "2789908aa7c14057a83c92fcadf0428e";
-    let search = async() =>{
+    let searchFun = async() =>{
     let categories = document.getElementById("categories");
     catagories.innerHTML= null;
     let query=document.getElementById("query").value;
@@ -422,4 +422,5 @@ let info=(data)=>{
     window.location.href="recipeinformation.html";
     console.log(data);
 }
+document.querySelector("#right > button").addEventListener("click",searchFun);
 </script>
