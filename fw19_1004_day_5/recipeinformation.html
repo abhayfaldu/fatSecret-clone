@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/hard-ear-2917/styles/header.css">
     <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/63c7c4276d.js"
+      crossorigin="anonymous"
+    ></script>
     <style>
         #main{
             display: flex;
@@ -251,7 +255,7 @@ color: antiquewhite;
 }
     </style>
 </head>
-<body onload="showInfo()">
+<body>
     <div id="header"></div>
     <div id="main">
     <div id="info">
@@ -449,7 +453,7 @@ showData();
     }
 
     
-    url1=`https://api.spoonacular.com/recipes/${id}/nutritionWidget.json?&apiKey=2789908aa7c14057a83c92fcadf0428e`;
+    let url1=`https://api.spoonacular.com/recipes/${id}/nutritionWidget.json?&apiKey=2789908aa7c14057a83c92fcadf0428e`;
     let showD= async ()=>{
     try {
         let res =await fetch(url1);
@@ -547,5 +551,5 @@ showData();
 
   }
 
-  
+  showInfo();
 </script>

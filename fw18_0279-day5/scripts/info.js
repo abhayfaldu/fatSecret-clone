@@ -1,5 +1,5 @@
 
-
+console.log(1);
 import { header } from "../components/header.js";
 document.querySelector("#header").innerHTML = header();
 
