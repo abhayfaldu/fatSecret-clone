@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Food Information</title>
-     <link rel="stylesheet" href="/hard-ear-2917/styles/header.css">
+    <link rel="stylesheet" href="/hard-ear-2917/styles/header.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     
     <style>
@@ -154,11 +154,72 @@
 }
 #img-logo>img{
     margin-left: 20px;
+
+        /*************** Another Section  ********************/
+}
+#card_section8{
+       width: 100%;
+       height: 250px;
+       background-color: rgb(70, 63, 63);
+       margin-top: 50px;
+      
+}
+#card_section9{
+    width: 100%;
+    height: 100px;
+    background-color: rgb(68, 165, 68);
+    background-attachment: fixed;
+}
+#card_section8>img:nth-child(1){
+    /* display: block; */
+    /* display: flex; */
+    /* justify-content: center; */
+    margin-left: 660px;
+    /* margin: auto; */
+    /* place-items: center; */
+}
+#card_section8>img{
+    /* display: block; */
+    /* display: flex; */
+    margin-left: 20px;
+    height: 20%;
+    /* margin-top: 50px; */
+}
+#card_section8>#mar{
+    margin-top: 30px;
+  display: flex;
+gap: 20px;
+color: white;
+}
+#card_section8>#mar>p:nth-child(1){
+  
+  margin-left: 630px;
+  }
+  #card_section8>#mar1{
+    margin-top: 30px;
+  display: flex;
+gap: 20px;
+color: antiquewhite;
+margin-left: 480px;
+font-size: 10px;
+}
+#card_section9>div{
+margin-left: 600px;
+color: antiquewhite;
+/* margin-top: 10px; */
+}
+#img-logo {
+    height: 50px;
+}
+#img-logo > img {
+    /* border: 1px solid #333; */
+    width: 100px;
+    height: 50px;
 }
     </style>
 </head>
 <body>
-        <div id="header"></div>
+    <div id="header"></div>
 
      <div id="top">
       <div id="im">
@@ -185,8 +246,8 @@
 
      <div class="an">
         <a href="">Calories |</a>
-        <a href="">Total Carbs |</a>
-        <a href="">Total Fats |</a>
+        <a href="/hard-ear-2917/1.html">Total Carbs |</a>
+        <a href="/hard-ear-2917/fat.html">Total Fats |</a>
         <a href="">Protein</a>
      </div>
     
@@ -200,16 +261,16 @@
                 <img src="https://a.ftscrt.com/static/images/box/recipesicon.gif" alt="" >
 
               </div>
-              <div style="float:left;line-height: 10px;margin-top: 15px;font-size: 10px;margin-right: 10px;">
+              <div style="float:left;line-height: 10px;margin-top: 15px;font-size: 10px;margin-right: 100px;">
                 <h2>Popular types of Baked Beans</h2>
 
               </div>
             </th>
             <!-- #region  second head   ***************-->
-            <th  title="Net C(g)">Net C(g)</th>
-            <th  title="Sugar(g)">Sugar(g)</th>
-            <th  title="Fiber(g)">Fiber(g)</th>
-            <th  title="Total Carbs(g)">Total Carbs(g)</th>
+            <th  title="Fat">Fat(g)</th>
+            <th  title="Carbohydrates">Carbs(g)</th>
+            <th  title="Protein">Prot(g)</th>
+            <th  title="Calories">Calories</th>
 
             </tr>
             <tr id="bg">
@@ -222,20 +283,20 @@
               <td>
                    <a href="#">1 cup</a>
               </td>
-              <td class="nutrient">40.22</td>
-              <td class="nutrient">No</td>
-              <td class="nutrient">13.29</td>
-             <td class="highlight ">54.12</td>
+              <td class="nutrient">13.03</td>
+              <td class="nutrient">54.12</td>
+              <td class="nutrient">14.04</td>
+             <td class="highlight ">382</td>
             </tr>
 
             <tr>
               <td>
                    <a href="#">100 g</a>
               </td>
-              <td class="nutrient">15.89</td>
-              <td class="nutrient">No</td>
-              <td class="nutrient">5.5</td>
-             <td class="highlight ">21.39</td>
+              <td class="nutrient">5.14</td>
+              <td class="nutrient">21.39</td>
+              <td class="nutrient">5.54</td>
+             <td class="highlight ">151</td>
             </tr>
            <!-- #region  2nd    **********************-->
             <tr id="bg">
@@ -248,20 +309,20 @@
               <td>
                    <a href="#">1 cup</a>
               </td>
-              <td class="nutrient">43.30</td>
-              <td class="nutrient">22.96</td>
-              <td class="nutrient">10.4</td>
-             <td class="highlight ">53.70</td>
+              <td class="nutrient">0.94</td>
+              <td class="nutrient">53.70</td>
+              <td class="nutrient">12.06</td>
+             <td class="highlight ">239</td>
             </tr>
 
             <tr>
               <td>
                    <a href="#">100 g</a>
               </td>
-              <td class="nutrient">17.04</td>
-              <td class="nutrient">9.04</td>
-              <td class="nutrient">4.1</td>
-             <td class="highlight ">21.14</td>
+              <td class="nutrient">0.37</td>
+              <td class="nutrient">21.14</td>
+              <td class="nutrient">4.75</td>
+             <td class="highlight ">94</td>
             </tr>
             <!-- #region  3rd  ******************-->
               <tr id="bg">
@@ -274,30 +335,57 @@
               <td>
                    <a href="#">1 cup</a>
               </td>
-              <td class="nutrient">13.65</td>
-              <td class="nutrient">No</td>
-              <td class="nutrient">13.9</td>
-             <td class="highlight ">50.55</td>
+              <td class="nutrient">3.92</td>
+              <td class="nutrient">50.55</td>
+              <td class="nutrient">13.13</td>
+             <td class="highlight ">268</td>
             </tr>
 
             <tr>
               <td>
                    <a href="#">100 g</a>
               </td>
-              <td class="nutrient">14.48</td>
-              <td class="nutrient">No</td>
-              <td class="nutrient">13.9</td>
-             <td class="highlight ">19.98</td>
+              <td class="nutrient">1.55</td>
+              <td class="nutrient">19.98</td>
+              <td class="nutrient">5.19</td>
+             <td class="highlight ">106</td>
             </tr>
 
           
         </thead>
       </table>
     </div>
+    <!-- footer -->
+    <div id="img-logo">
+           <img src="https://static.fatsecret.com/static/images/mobi/ios/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg" alt="">
+           <img src="https://static.fatsecret.com/static/images/mobi/android/en_get_2.svg" alt="">
+           
+           
+            <!-- <img class="img1" src="https://static.fatsecret.com/static/images/splash/Logo_Tab_Reverse_Green.png" alt=""> -->
+     
+        </div>
+
+     <div id="card_section8">
+<img src="https://a.ftscrt.com/static/images/social/but_social_facebook.svg" alt="">
+<img src="https://a.ftscrt.com/static/images/social/but_social_instagram.svg" alt="">
+<img src="https://a.ftscrt.com/static/images/social/but_social_twitter.svg" alt=""> 
+
+<div id="mar">
+    <p>BRAND LIST</p>
+    <p>CONTACT US</p>
+</div>
+<div id="mar1">
+    <h3>FIND PEOPLE</h3>
+    <h3> | TERMS AND CONDITIONS</h3>
+    <h3>| PRIVACY POLICY</h3>
+    <h3>| REPORT ABUSE</h3>
+</div>
+
+</div>
+  <div id="card_section9"> 
+<div>
+    <p>© 2022 FatSecret. All rights reserved.</p>
+</div>
 </body>
 </html>
-<script>
-    import { header } from "../components/header.js";
-  let headerDiv = document.querySelector("#header");
-  headerDiv.innerHTML = header();
-</script>
+<script src="/hard-ear-2917/fw18_0279-day5/scripts/info.js" type="module"></script>

@@ -76,7 +76,7 @@ let detail = new customerdet(Password,Email,Weight,Name)
 console.log(detail);
 arr.push(detail);
 localStorage.setItem("Details",JSON.stringify(arr));
-window.location.href="./Login.html"
+window.location.href="/hard-ear-2917/Login.html"
 // window.location.reload();
     }
     

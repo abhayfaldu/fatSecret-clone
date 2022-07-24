@@ -1,4 +1,4 @@
-import { header } from "../components/header.js";
+import { header } from "/hard-ear-2917/components/header.js";
 document.querySelector("#header").innerHTML = header();
 
 let searchObj = JSON.parse(localStorage.getItem("searchObj"));

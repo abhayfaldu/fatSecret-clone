@@ -1,4 +1,4 @@
-import { header } from "../components/header.js";
+import { header } from "/hard-ear-2917/components/header.js";
 let headerDiv = document.querySelector("#header");
 headerDiv.innerHTML = header();
 
@@ -191,11 +191,8 @@ function carouselAppend(i) {
 let searchBtn = document.querySelector("#searchBtn").addEventListener("click", search)
 function search () {
   let query = document.querySelector("#ExerciseSearch").value;
-  if (query === "sleeping") {
-    localStorage.setItem("searchVal", "sleeping");
-    window.location.href = "activities.html"
-  } else if (query === "bicycling") {
-    localStorage.setItem("searchVal", "bicycling");
-    window.location.href = "activities.html"
+  if (query === "sleeping" || query === "bicycling") {
+    localStorage.setItem("searchVal", query);
+    window.location.href = "/hard-ear-2917/activities.html";
   }
 }

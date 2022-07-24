@@ -1,6 +1,6 @@
 
 console.log(1);
-import { header } from "../components/header.js";
+import { header } from "/hard-ear-2917/components/header.js";
 document.querySelector("#header").innerHTML = header();
 
 let array2 = JSON.parse(localStorage.getItem("news"))
@@ -13,7 +13,7 @@ let search = (ele) => {
     array.push(Store_Data);
 
     localStorage.setItem("search",JSON.stringify(Store_Data))
-    window.location.href="Search.html"
+    window.location.href="/hard-ear-2917/Search.html"
     
     
 }

@@ -272,7 +272,7 @@ color: antiquewhite;
       <div id="right_side">
         <h1>Food Search</h1>
         <input type="text" name="" placeholder="Enter Search" id="query" />
-        <button onclick="search()">
+        <button >
           <i class="fa-solid fa-magnifying-glass"></i>
         </button>
         <br />
@@ -313,7 +313,7 @@ color: antiquewhite;
   </body>
 </html>
 <script type="module">
-  import { header } from "../components/header.js";
+  import { header } from "/hard-ear-2917/components/header.js";
   let headerDiv = document.querySelector("#header");
   headerDiv.innerHTML = header();
 
@@ -429,7 +429,9 @@ color: antiquewhite;
 
   let info = (data) => {
     localStorage.setItem("food_info", JSON.stringify(data));
-    window.location.href = "info.html";
+    window.location.href = "/hard-ear-2917/info.html";
     console.log(data);
   };
+
+  document.querySelector("#right_side > button").addEventListener("click", search);
 </script>
