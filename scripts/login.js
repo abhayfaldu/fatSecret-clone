@@ -19,7 +19,7 @@ function Submit(event){
     }
     if(flag == true){
       alert("Login successful!")
-      window.location.href = "/hard-ear-2917/food.html";
+      window.location.href = "food.html";
     }else if(flag==false){
       alert("Login failed.")
     }else if(flag==undefined){

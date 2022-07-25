@@ -140,8 +140,8 @@ function Navbar(){
         <p>FatSecret is 100% free</p>
     </div>
     <input  type="text" id="email" placeholder="Email Address">
-    <button onclick="Submit(event)"><a href="/hard-ear-2917/register.html">Start Now</a></button>
-          <p>Already a Member?<a href="/hard-ear-2917/Login.html">Sign In</a></p>
+    <button onclick="Submit(event)"><a href="register.html">Start Now</a></button>
+          <p>Already a Member?<a href="Login.html">Sign In</a></p>
 </div>
 <div id="seventh-section">
 <div class="lock-4">

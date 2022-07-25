@@ -10,7 +10,7 @@
         }else{
             arr.push(Value);
             localStorage.setItem("user", JSON.stringify(arr));
-            window.location.href="/hard-ear-2917/register.html";
+            window.location.href="register.html";
         }
        
     }

@@ -1,13 +1,14 @@
-import { header } from "/hard-ear-2917/components/header.js";
+import { header } from "../components/header.js";
 document.querySelector("#header").innerHTML = header();
 
 let searchObj = JSON.parse(localStorage.getItem("searchObj"));
 
 console.log(1.3);
-let searchBtn = document.querySelector("#searchBtn").addEventListener("click", search);
+let searchBtn = document
+  .querySelector("#searchBtn")
+  .addEventListener("click", search);
 
 function search() {
-
   let searchInputVar = document.querySelector("#searchInput").value;
   console.log("searchInputVar:", searchInputVar, "hee");
 

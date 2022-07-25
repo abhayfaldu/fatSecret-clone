@@ -1,15 +1,15 @@
-let header = () => {
+function header () {
   return `<div id="register">
       <div class="container">
-        <a href="/hard-ear-2917/register.html" >Register</a>
+        <a href="register.html" >Register</a>
         &nbsp;|&nbsp;
-        <a href="/hard-ear-2917/Login.html" >Sign in</a>
+        <a href="Login.html" >Sign in</a>
       </div>
     </div>
     <div id="logoAndSearch">
       <div class="container">
         <div id="logo">
-          <a href="/hard-ear-2917/index.html">
+          <a href="index.html">
             <img src="https://a.ftscrt.com/static/images/def20/Fatsecret_logo.png" alt="Fatsecret_logo" id="logoImg">
           </a>
           <div>INDIA</div>
@@ -31,12 +31,12 @@ let header = () => {
     <div id="navbar">
       <div class="container">
         <a href="#">MY FATSECRET</a>
-        <a href="/hard-ear-2917/food.html">FOODS</a>
-        <a href="/hard-ear-2917/recipe.html">RECIPES</a>
-        <a href="/hard-ear-2917/fitness.html">FINTESS</a>
+        <a href="food.html">FOODS</a>
+        <a href="recipe.html">RECIPES</a>
+        <a href="fitness.html">FINTESS</a>
         <a href="#">COMMUNITY</a>
         <a href="#"></a>
       </div>
     </div>`;
-}
+};
 export {header}

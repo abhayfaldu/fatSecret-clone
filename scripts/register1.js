@@ -124,16 +124,16 @@ function section(){
  <div id="condition">
      By clicking 'Next', you agree to the FatSecret
      <span>
-         <a href="/hard-ear-2917/terms.html">Terms And conditions</a>
+         <a href="terms.html">Terms And conditions</a>
      </span>
      and
      <span>
-         <a href="/hard-ear-2917/privacy.html">Privacy Policy</a>
+         <a href="privacy.html">Privacy Policy</a>
      </span>
  </div>
 
- <button id="can"><a href="/hard-ear-2917/index.html">Cancel</a></button>
- <button onclick="Submit(event)" id="nex"><a href="#">Next</a></button>
+ <button id="can"><a href="index.html">Cancel</a></button>
+ <button onclick="Submit(event)" id="nex"><a href="index.html">Next</a></button>
 </div>`;
 }
 

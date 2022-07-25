@@ -1,4 +1,4 @@
-import { header } from "/hard-ear-2917/components/header.js";
+import { header } from "../components/header.js";
 let headerDiv = document.querySelector("#header");
 headerDiv.innerHTML = header();
 
@@ -20,7 +20,8 @@ const exerciseArr = [
   {
     heading: "Stretching (yoga)",
     fiveMin: 24,
-    image: "https://a.ftscrt.com/static/images/fitness/lrg_stretching-(yoga).gif",
+    image:
+      "https://a.ftscrt.com/static/images/fitness/lrg_stretching-(yoga).gif",
     tenMin: function () {
       return this.fiveMin * 2;
     },
@@ -48,7 +49,8 @@ const exerciseArr = [
   {
     heading: "Dance (fast step, aerobic)",
     fiveMin: 37,
-    image: "https://a.ftscrt.com/static/images/fitness/lrg_dance-(fast-step-aerobic).gif",
+    image:
+      "https://a.ftscrt.com/static/images/fitness/lrg_dance-(fast-step-aerobic).gif",
     tenMin: function () {
       return this.fiveMin * 2;
     },
@@ -68,7 +70,7 @@ let searchObj = {
       intensity: "high",
       met: 0.9,
       calories: 66,
-    }
+    },
   ],
   bicycling: [
     {
@@ -112,17 +114,15 @@ let searchObj = {
 localStorage.setItem("searchObj", JSON.stringify(searchObj));
 
 let carousel = () => {
-  
   let i = 1;
   let id = setInterval(() => {
-
     carouselAppend(i);
     if (i == 3) {
       i = -1;
     }
     i++;
   }, 10000);
-}
+};
 carouselAppend(0);
 carousel();
 function carouselAppend(i) {
@@ -188,11 +188,16 @@ function carouselAppend(i) {
   outerDiv.append(img, innerDiv);
   exercise.append(h1, outerDiv);
 }
-let searchBtn = document.querySelector("#searchBtn").addEventListener("click", search)
-function search () {
+let searchBtn = document
+  .querySelector("#searchBtn")
+  .addEventListener("click", search);
+function search() {
   let query = document.querySelector("#ExerciseSearch").value;
-  if (query === "sleeping" || query === "bicycling") {
-    localStorage.setItem("searchVal", query);
-    window.location.href = "/hard-ear-2917/activities.html";
+  if (query === "sleeping") {
+    localStorage.setItem("searchVal", "sleeping");
+    window.location.href = "activities.html";
+  } else if (query === "bicycling") {
+    localStorage.setItem("searchVal", "bicycling");
+    window.location.href = "activities.html";
   }
 }

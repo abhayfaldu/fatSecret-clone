@@ -4,7 +4,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/hard-ear-2917/styles/header.css">
+    <link rel="stylesheet" href="./styles/header.css">
     <script
       src="https://kit.fontawesome.com/63c7c4276d.js"
       crossorigin="anonymous"
@@ -304,7 +304,7 @@ color: antiquewhite;
 </html>
 <script type="module">
 
-import { header } from "/hard-ear-2917/components/header.js";
+import { header } from "./components/header.js";
 let headerDiv = document.querySelector("#header");
 headerDiv.innerHTML = header();
 
@@ -419,7 +419,7 @@ let append1 = (data) =>{
 
 let info=(data)=>{
     localStorage.setItem("recipeinfo",JSON.stringify(data));
-    window.location.href="/hard-ear-2917/recipeinformation.html";
+    window.location.href="./recipeinformation.html";
     console.log(data);
 }
 document.querySelector("#right > button").addEventListener("click",searchFun);
